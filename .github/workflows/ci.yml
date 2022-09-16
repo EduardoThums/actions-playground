@@ -6,6 +6,6 @@ jobs:
     steps:
       - name: haha
         run: |
-          echo $GITHUB_EVENT_PATH
-          echo "$GITHUB_EVENT_PATH"
-          echo '$GITHUB_EVENT_PATH'
+          echo "$GITHUB_EVENT_PATH/something/"
+          # echo "$GITHUB_EVENT_PATH"
+          # echo '$GITHUB_EVENT_PATH'
