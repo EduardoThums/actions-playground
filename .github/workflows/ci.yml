@@ -5,7 +5,9 @@ jobs:
 
     steps:
       - name: haha
+        env:
+          FOO: bar
         run: |
-          echo "$GITHUB_EVENT_PATH/something/"
+          echo "$GITHUB_EVENT_PATH/something/${{ env.FOO }}"
           # echo "$GITHUB_EVENT_PATH"
           # echo '$GITHUB_EVENT_PATH'
