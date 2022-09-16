@@ -1,8 +1,4 @@
-on:
-  pull_request:
-    branches:
-      - main
-
+on: pull_request
 jobs:
   foo:
     runs-on: ubuntu-22.04
