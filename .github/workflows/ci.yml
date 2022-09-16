@@ -1,0 +1,15 @@
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  foo:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: haha
+        run: |
+          echo $GITHUB_EVENT_PATH
+          echo "$GITHUB_EVENT_PATH"
+          echo '$GITHUB_EVENT_PATH'
