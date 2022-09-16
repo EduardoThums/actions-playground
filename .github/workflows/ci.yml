@@ -7,4 +7,6 @@ jobs:
       - name: haha
         env:
           PULL_NUMBER: 1
-        run: echo "https://api.github.com/repos/$GITHUB_REPOSITORY_OWNER/$GITHUB_REPOSITORY/pulls/${{ env.PULL_NUMBER }}/reviews"
+        run: |
+          curl -X POST \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY_OWNER/$GITHUB_REPOSITORY/pulls/${{ env.PULL_NUMBER }}/reviews"
