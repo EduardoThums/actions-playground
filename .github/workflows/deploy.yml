@@ -9,4 +9,4 @@ jobs:
 
     steps:
       - name: say hello
-        run: echo "hello"
+        run: exit 1
