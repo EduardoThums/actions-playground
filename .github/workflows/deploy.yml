@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: say hello
-        run: exit 1
+        run: echo hello
   
   stage:
     runs-on: ubuntu-22.04
