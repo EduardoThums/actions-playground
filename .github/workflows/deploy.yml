@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   hello:
     runs-on: ubuntu-22.04
-    environment: development
+    environment: dev
 
     steps:
       - name: say hello
