@@ -14,7 +14,7 @@ jobs:
   stage:
     runs-on: ubuntu-22.04
     environment: stage
-    needs: dev
+    # needs: dev
 
     steps:
       - name: say hello
