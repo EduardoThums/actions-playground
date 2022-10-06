@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: say hello
         run: echo hello
+
+      - name: say hi
+        run: echo hi 
   
   stage:
     runs-on: ubuntu-22.04
