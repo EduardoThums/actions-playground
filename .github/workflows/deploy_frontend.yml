@@ -1,0 +1,21 @@
+name: "deploy front"
+
+on: workflow_dispatch
+
+jobs:
+  dev:
+    runs-on: ubuntu-22.04
+    environment: dev
+
+    steps:
+      - name: say hello
+        run: echo hello
+  
+  stage:
+    runs-on: ubuntu-22.04
+    environment: stage
+    needs: dev
+
+    steps:
+      - name: say hello
+        run: exit 1
